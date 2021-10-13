@@ -1,0 +1,45 @@
+.navMenu {
+    height: 100%;
+    width: 18%;
+    display: flex;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-image: linear-gradient(to right, #00853E, #00A950 70%, #C4D600 90%);
+    padding-top: 20px;
+    flex-direction: column;
+    overflow-x: hidden;
+    align-items: center;
+    transition: transform .3s cubic-bezier(0, .52, 0, 1);
+}
+
+.expanded {
+    transform: translate3d(0vw, 0, 0);
+    overflow: hidden;
+}
+
+.collapsed {
+    transform: translate3d(-16vw, 0, 0);
+}
+
+.navItem {
+    color: white;
+}
+
+.expander {
+    height: 100%;
+    margin-left: 95%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    float: right;
+    writing-mode: vertical-rl;
+    text-orientation: sideways;
+    cursor: pointer;
+    background-image: linear-gradient(to right, #C4D600, white 25%);
+}
+
+.expander:hover {
+    background-image: linear-gradient(to right, #C4D600, white 75%);
+}
