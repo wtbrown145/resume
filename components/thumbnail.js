@@ -12,9 +12,13 @@ class Thumbnail extends React.Component{
     render(){
         return <div style={{paddingBottom: "20px"}}>
             <div className={styles.thumbnailCard}>
-                <Link href="/">
-                    <a>
+                <Link href={this.props.titleHref} >
+                    <a target="_blank">
                         <h3>{this.props.ThumbnailTitle}</h3>
+                    </a>
+                </Link>
+                <Link href={this.props.imgHref} >
+                    <a target="_blank">
                         <Image
                             src={this.props.src} 
                             width={this.props.width} 
@@ -36,7 +40,9 @@ Thumbnail.defaultProps = {
     width: "800px",
     height: "650px",
     alt: "Preview Image",
-    title: "Preview Image"
+    title: "Preview Image",
+    imgHref: "/",
+    titleHref: "/"
 }
 
 export default Thumbnail;

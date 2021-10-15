@@ -17,7 +17,8 @@ export default function Projects(){
           <Viewport>
             <h1>Projects</h1>
 
-            <p>All projects are currently In Progress, but will be posted here once finished.</p>
+            <Thumbnail ThumbnailTitle="Resume" ThumbnailDescription="The first project I finished for this portfolio is this interactive Resume website itself. Click on the image or title above to open the source code on GitHub in a new tab." src="/previews/resume_preview.jpg" imgHref="https://github.com/wtbrown145/resume/" titleHref="https://github.com/wtbrown145/resume/" />
+            <Thumbnail ThumbnailTitle="Components" ThumbnailDescription="This is an ongoing collection of components that I've utilized as-is or modified to create the other projects featured here. Click on the image or title above to be taken to the source code on GitHub in a new tab." src="/previews/components_preview.jpg" imgHref="https://github.com/wtbrown145/components/" titleHref="https://github.com/wtbrown145/components/" />
           </Viewport>
         </main>
       </div>
